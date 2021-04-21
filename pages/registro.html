@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Farmacia Luz de Vida - Registro</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<header>
+<h1>BIENVENIDOS A FARMACIAS LUZ DE VIDA</h1>
+</header>
+<main>
+	<!--Inicio del main y su contenido principal-->
+<section class="loginP">
+	<!--Los form son empleados para crear formularios donde se solicitará información-->
+	<form>
+			<h3>Formulario Registro</h3>
+			<br><br>
+			<div class="grid_registro">
+				<!--La etiqueta input es utilizada para el ingreso de información-->
+				<input type="text" name="txtNombreR" id="idNombreR" class="grid_login2" required placeholder="Ingrese su Nombre">
+			</div>
+
+			<div class="grid_registro">
+				<input type="text" name="txtApellido" id="idApellido" class="grid_login2" required placeholder="Ingrese su Apellido">
+			</div>
+
+			<div class="grid_registro">
+				<input type="email" name="txtEmailR" id="idEmailR" class="grid_login2" required placeholder="Ingrese su Email">
+			</div>
+
+			<div class="grid_registro">
+				<input type="password" name="txtpassword" id="idpassword" class="grid_login2" required placeholder="Ingrese su contraseña">
+			</div>
+
+			<div class="grid_registro">
+				<input type="password" name="txtpassword2" id="idpassword2" class="grid_login2" required placeholder="Ingrese su contraseña otra vez">
+			</div>
+
+			<div class="grid_registro">
+				<input type="checkbox" id="CheckbR" value="first_checkbox"> <label for="CheckbR">Acepto los Terminos y Condiciones</label>
+			</div>
+			<br>
+			<button type="submit" style="width:260px; height: 40px;" >Registrar</button>
+			<br><br>
+			<a href="login.html">¿Ya tengo una Cuenta?</a>
+	</form>
+	</section>
+</main>
+</body>
+<footer>
+	<!--Espacio designado para el pie de página, tendrá información básica del local-->
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+</html>

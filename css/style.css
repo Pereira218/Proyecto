@@ -1,0 +1,197 @@
+*{
+	/*Permite calcular el alto y ancho total de un elemento. Con border-box hace que el calculo del ancho sea: ancho = borde + relleno + ancho del contenido,*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header img{
+	/*Modifica la posición de un elemento (etiqueta junto con su contenido)*/
+	float: left;
+	/*Establece los tipos de visualización interna y externa de un elemento.*/
+	display: flex;
+}
+
+body{
+	/*Modifica el color del fondo del elemento, con gradient establece un degradado de colores*/
+background: linear-gradient(#87f396, #ffff7e); 
+}
+
+header{
+	background-color: #87f396;
+	height: 90px;
+}
+
+header li{
+	float: right;
+	/*Modifica los signos que aparecen al momento de enlistar texto u objetos, con "none" lo que hace es eliminar dichos signos*/
+	list-style-type: none;
+	padding-right: 2.5%;
+	margin-top: 30px;
+}
+
+h1{
+	color: green;
+	font-size: 3rem;
+	text-align: center;
+}
+
+header a{
+	display: block;
+	text-align: center;
+	/*Establece el formato que tendrá el texto, al colocar "none" eliminará todos los formatos que este posea (subrayado, negrita, etc)*/
+	text-decoration: none;
+	width: 100%;
+	font-size: 40px;
+}
+
+/*hover permite colocar un color al momento de posicionar el cursor sobre el enlace*/
+a:hover {
+  color: white;
+}
+
+article li{
+	list-style-type: none;
+}
+
+main{
+	/*Permite limpiar los residuos dejados por utilizar float*/
+clear:both;
+}
+
+article{
+	float: right;
+	width: 60%;
+	margin-left: 10px;
+	padding-left: 10px; 
+	padding-right: 10px
+}
+
+aside{
+width: 40%;
+padding-top: 70px; 
+text-align:center;
+padding-bottom:136px;
+}
+
+aside a{
+	list-style-type: none;
+	border-top: 2px;
+	width: 150%;
+	font-size: 20px;
+}
+
+.img_cruz{
+	display: block;
+	margin: auto;
+}
+
+
+footer{
+	float: bottom;
+	width: 100%;
+	text-align:center;
+	clear:both;
+	background-color: #295720;
+}
+
+h2{
+	text-align: center;
+}
+
+th, td{
+	border:solid black 2px;
+}
+
+td{
+	text-align: right;
+	width: 22em;
+	font-size: 27px;
+}
+
+.grid_producto{
+	padding-top: 17em;
+}
+
+table{
+	padding-bottom: 10px;
+}
+
+.grid_oferta{
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 27px;
+}
+
+.grid_data{
+	display: grid;
+	/*Permite establecer el espacio por columna que ocupará el elemento*/
+	grid-template-columns: 2fr 9fr;
+}
+
+.but{
+	 /*Permite establecer el espacio que ocuparan por columna, los números representan la posición que ocuparan, las fracciones establecen desde qué numero hasta que número deberan ocupar en columna, 1/3, desde la columna 1 hasta la 3. Span sirve para dejar un espacio*/
+	grid-column: 2/span 4;
+}
+
+.prd_ofe{
+	padding-bottom: 60px;
+}
+
+.loginP{
+	text-align: center; 
+	background-color: #3ffb01;
+	border: solid #0c2105 5px;
+	/*Permite modificar las esquinas del contorno de la figura, entre mayor sea el tamaño asignado, más curva serán las esquinas*/
+	border-radius: 1px;
+	margin: 100px 500px;
+	display: grid;
+	padding-bottom:  30px;
+}
+
+.grid_login{
+	font-size: 1em;
+	border:0;
+	margin-bottom: 55px;
+	background:transparent;
+	width: 270px;
+	height: 35px;
+	border-bottom: solid blue 1px;
+}
+
+.grid_login2{
+	font-size: 1em;
+	border:0;
+	margin-bottom: 20px;
+	background:transparent;
+	width: 270px;
+	height: 35px;
+	border-bottom: solid blue 1px;
+}
+
+.loginP h3{
+	padding-top: 20px; 
+	font-size: 3em;
+}
+
+.idContraseña{
+margin-bottom: 20px;
+}
+
+.ch{
+	padding-left: 35px;
+	text-align: left;
+}
+
+.containerP td{
+	text-align: left;
+	width: 22em;
+	font-size: 17px;
+}
+
+/*instrucción utilizada para que se pueda adaptar la página a cualquier pantalla que esté en ella*/
+@media screen and (max-width: 700px){ 
+	main{
+		grid-template-columns: 1fr
+	}
+}

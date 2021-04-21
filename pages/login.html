@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Farmacia Luz de Vida - Login</title>
+</head>
+<body>
+<header>
+<h1>BIENVENIDOS A FARMACIAS LUZ DE VIDA</h1>
+</header>
+<main>
+	<!--Inicio del main y su contenido principal-->
+<section class="loginP">
+	<!--Los form son empleados para crear formularios donde se solicitará información-->
+	<form>
+			<h3>Bienvenido</h3>
+			<br><br><br>
+			<div>
+				<!--La etiqueta input es utilizada para el ingreso de información-->
+				<input type="text" name="txtNombreU" id="idNombreU" class="grid_login" required placeholder="Nombre de Usuario">
+			</div>
+
+			<div>
+				<input type="password" name="txtContraseña" id="idContraseña" class="grid_login2" required placeholder="Contraseña">
+			</div>
+
+			<div class="ch">
+				<input type="checkbox" id="Checkb" value="first_checkbox"> <label for="Checkb">Recordar Usuario</label>
+				<br>
+				
+			</div>
+			<br>
+			<button type="submit" style="width:260px; height: 40px;">Login</button>
+			<br><br>
+			<p>No tienes cuenta aún? <a href="registro.html">Registrate</a></p>
+	</form>
+	</section>
+</main>
+</body>
+<footer>
+	<!--Espacio designado para el pie de página, tendrá información básica del local-->
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+</html>

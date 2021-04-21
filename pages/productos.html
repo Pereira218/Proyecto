@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Farmacia Luz de Vida - Productos</title>
+</head>
+<body>
+<header>
+	<!--Espacio para la barra de navegación donde estarán los principales enlaces a las otras páginas-->
+	<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="80px">
+	<nav>
+		<ul>
+			<!--Se empleará  target = "_blank" para que al presionar el enlace, se habrá dicha página en una nueva ventana-->
+			<li><a href="login.html" target="_blank">Login</a></li>
+			<li><a href="productos.html">Productos</a></li>
+			<li><a href="../index.html" target="_blank">Inicio</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<!--Inicio del main y su contenido principal-->
+	<section>
+		<article>
+			<h2>Productos</h2>
+			<!--Mediante la etiqueta table podremos crear y diseñar una tabla, td es para los encabezados y th para las celdas-->
+			<table>
+  			<tr>
+			    <th><img src="../images/diclo.jpg" alt="Diclofenaco" title="Diclofenaco" width="200px"></th>
+			    <td>Diclofenaco (Blister de 10 unidades)  -  Q.7.00</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/flutox.jpg" alt="Flutox" title="Flutox" width="200px"></th>
+			    <td>Flutox (Jarabe)  -  Q. 72.00</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/panadol.jpg" alt="Panadol" title="Panadol" width="200px"></th>
+			    <td>Panadol Sinusitis (Caja de 16 unidades)  -  Q.24.00</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/paracetamol.jpg" alt="Paracetamol" title="Paracetamol" width="200px"></th>
+			    <td>Paracetamol (Blister de 10 unidades)  -  Q.21.00</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/tabcin.png" alt="Tabcin" title="Tabcin" width="200px"></th>
+			    <td>Tabcin (Caja de 12 tabletas)  -  Q.27.00</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/acetaminofen.jpg" alt="Acetaminofen" title="Acetaminofen" width="200px"></th>
+			    <td>Acetaminofen (Jarabe)  -  Q24.50</td>
+			</tr>
+			<tr>
+			    <th><img src="../images/vita.jpg" alt="Vitaflenaco" title="Vitaflenaco" width="200px"></th>
+			    <td>Vitaflenaco (Caja de 15 unidades) -  Q.26.00</td>
+			</tr>
+		</table>
+		</article>
+
+			<!--Espacio del contenido que no está relacionado directamente con el principal (aside), en este espacio habrá más enlaces para distintas páginas-->
+		<aside class="grid_producto">
+			<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="300px" class="img_cruz">	
+			<a href="oferta.html" target="_blank"><img src="../images/boton2.png" alt="Boton de Ofertas" title="Boton de Ofertas" width="200px"></a>
+			<br>
+			<a href="contacto.html" target="_blank"><img src="../images/boton1.png" alt="Boton de Contacto" title="Boton de Contacto" width="200px"></a>
+			<!--Espacio en donde habrá un textArea para que el usuario pueda escribir un comentario-->
+			<h3>Dejanos un comentario</h3>
+			<form action="#" method="post">
+				<textarea name="txtEmail" id="idComentario" required="" cols="50" rows="7"></textarea>
+				<br>
+				<button type="submit" style="width:260px; height: 40px;">Enviar Comentario</button>
+			</form>
+			</aside>
+	</section>
+</main>
+</body>
+<!--Espacio designado para el pie de página, tendrá información básica del local-->
+<footer>
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+</html>

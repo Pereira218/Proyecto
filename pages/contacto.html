@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Farmacia Luz de Vida - Contacto</title>
+</head>
+<body>
+<header>
+	<!--Espacio para la barra de navegación donde estarán los principales enlaces a las otras páginas-->
+	<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="80px">
+	<nav>
+		<ul>
+			<!--Se empleará  target = "_blank" para que al presionar el enlace, se habrá dicha página en una nueva ventana-->
+			<li><a href="login.html">Login</a></li>
+           <li><a href="pedido.html">Realizar Pedido</a></li>
+            <li><a href="productosañadir.html">Añadir Productos</a></li>
+            <li><a href="nuestrosproductos.html">Catálogo</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<!--Inicio del main y su contenido principal-->
+    <section>
+		<article>
+	<img src="../images/contactanos.png" alt="Logo de Contacto" title="Logo de Contacto" width="600px">
+	<br><br>
+	<h4>Teléfonos:</h4>
+	<br>
+	<p>Tel: 4569-8832 ó Tel: 3899-3842</p>
+	<br>
+	<h4>Dirección:</h4>
+	<br>
+	<p>(Central) Barberena, Santa Rosa</p>
+	<p>(Capital) Avenida 14 de Septiembre, Zona 13</p>
+	<br>
+	<h4>Horario de Atención</h4>
+	<br>
+	<p>De Lunes a Sábado de 08:00 AM a 10:00 PM</p>
+	<p>Domingos de 08:00 Am a 07:00 PM</p>
+	<br>
+	<!--Los form son empleados para crear formularios donde se solicitará información, los fieldset se usan para agrupar controles-->
+	<form>
+		<fieldset>
+			<legend>Comunícate con nosotros por correo</legend>
+			<div class="grid_data">
+				<!--Los label son etiquetas que permiten mostrar mensajes-->
+				<label for="idNombre">Nombre</label>
+				<!--La etiqueta input es utilizada para el ingreso de información-->
+				<input type="text" name="txtNombre" id="idNombre" required placeholder="ingrese su nombre">
+			</div>
+
+			<div class="grid_data">
+				<label for="idCorreo">Correo Electrónico</label>
+				<input type="email" name="txtCorreo" id="idCorreo" required placeholder="ingrese su correo electrónico">
+			</div>
+
+			<div class="grid_data">
+				<label for="idComentario">Mensaje</label>
+				<textarea name="txtComentario" id="idComentario" required=""></textarea>
+				<button type="submit"  style="grid-column: 2;" >Enviar</button>
+			</div>
+		</fieldset>
+	</form>
+		</article>
+	</section>
+	<!--Espacio del contenido que no está relacionado directamente con el principal (aside), en este espacio habrá más enlaces para distintas páginas-->
+		<aside>
+			<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="300px" class="img_cruz">	
+			<br>
+			<a href="contacto.html"><img src="../images/boton1.png" alt="Boton de Contacto" title="Boton de Contacto" width="200px"></a>
+
+			<h3>Dejanos un comentario</h3>
+			<form action="#" method="post">
+				<textarea name="txtEmail" id="idComentario" required="" cols="50" rows="7"></textarea>
+				<br>
+				<button type="submit" style="width:260px; height: 40px;" >Enviar Comentario</button>
+			</form>
+			</aside>
+</main>
+</body>
+<footer>
+	<!--Espacio designado para el pie de página, tendrá información básica del local-->
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+</html>

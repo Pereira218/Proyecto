@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<title>Farmacia Luz de Vida - Ofertas</title>
+</head>
+<body>
+<header>
+	<!--Espacio para la barra de navegación donde estarán los principales enlaces a las otras páginas-->
+	<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="80px">
+	<nav>
+		<ul>
+			<!--Se empleará  target = "_blank" para que al presionar el enlace, se habrá dicha página en una nueva ventana-->
+			<li><a href="login.html">Login</a></li>
+           <li><a href="pedido.html">Realizar Pedido</a></li>
+            <li><a href="productosañadir.html">Añadir Productos</a></li>
+            <li><a href="nuestrosproductos.html">Catálogo</a></li>
+            <li><a href="../index.html">Inicio</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<!--Inicio del main y su contenido principal-->
+	<section>
+		<article  class="grid_oferta">
+			<h2>Ofertas</h2>
+			<div class="prd_ofe">
+						<img src="../images/sukrol.jpg" alt="Sukrol" title="Sukrol" width="500px">
+						<br>
+						<p>Sukrol (Oferta 100 tabletas) x2  -  Q75.00 </p>
+			</div>
+
+			<div class="prd_ofe">
+						<img src="../images/cariax.jpg" alt="Cariax" title="Cariax" width="500px">
+						<br>
+						<p>Cariax (Oferta) 2x1 -  Q.115.00 </p>
+			</div>
+
+			<div class="prd_ofe">
+						<img src="../images/brubiol.jpg" alt="Brubiol" title="Brubiol" width="500px">
+						<br>
+						<p>Brubiol (Oferta) x2  -  Q.20.00 </p>
+			</div>
+
+		</article>
+		<!--Espacio del contenido que no está relacionado directamente con el principal (aside), en este espacio habrá más enlaces para distintas páginas-->
+		<aside class="grid_producto">
+			<img src="../images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="300px" class="img_cruz">	
+			
+			<br>
+			<a href="contacto.html" target="_blank"><img src="../images/boton1.png" alt="Boton de Contacto" title="Boton de Contacto" width="200px"></a>
+
+			<h3>Dejanos un comentario</h3>
+			<form action="#" method="post">
+				<textarea name="txtEmail" id="idComentario" required="" cols="50" rows="7"></textarea>
+				<br>
+				<button type="submit" style="width:260px; height: 40px;" >Enviar Comentario</button>
+			</form>
+			</aside>
+	</section>
+</main>
+</body>
+<!--Espacio designado para el pie de página, tendrá información básica del local-->
+<footer>
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+</html>

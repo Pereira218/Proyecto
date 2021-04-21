@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--Espacio donde se establecen los metadatos y los llamados a los archivos externos (css para aplicar el estilo)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Farmacia Luz de Vida</title>
+</head>
+<body>
+
+<header>
+	<!--Espacio para la barra de navegación donde estarán los principales enlaces a las otras páginas-->
+	<nav>
+		<ul>
+			<!--Se empleará  target = "_blank" para que al presionar el enlace, se habrá dicha página en una nueva ventana-->
+			<img src="images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="80px">
+			<li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/pedido.html">Realizar Pedido</a></li>
+            <li><a href="pages/productosañadir.html">Añadir Productos</a></li>
+            <li><a href="pages/nuestrosproductos.html">Catálogo</a></li>
+            <li><a href="index.html">Inicio</a></li>
+		</ul>
+	</nav>
+</header>
+	<main>
+		<!--Inicio del main y su contenido principal-->
+		<section>
+			<article>
+				<img src="images/enfermera.jpg" alt="Logo de farmaceutica" title="Logo de farmaceutica" width="790px">
+				<h2>Historia de la Farmacia</h2>
+				<p>La Farmacia Luz de Vida nace debido al esfuerzo y dedicación de un grupo de estudiantes de medicina, los cuales al ver la escases de fármacos y artículos de primeros auxílios en su comunidad tomaron como iniciativa realizar viajes a la capital con el fin de conseguir los productos más solicitados y de venta libre. Con el tiempo decidieron alquilar un pequeño local desde el cual conseguian los fármacos y productos para su venta a precios razonables y justos. Con el tiempo y la dedicación, hoy en día, la Farmacia Luz de Vida es una de las cadenas de farmacias más reconocidas a nivel nacional.</p>
+				<br>
+			</article>
+
+			<article>
+				<h2>Compromiso</h2>
+				<p>Como un profesional, me comprometo a cumplir fielmente los fundamentos de mi profesión:</p>
+				<br>
+				<ul>
+					<li><p><b>ORIENTARÉ</b> mi actuación profesional y personal con dignidad, integridad y honradez y siendo plenamiente consciente de mis deberes profesionales para con la sociedad </p></li>
+					<br>
+					<li><p><b>APLICARÉ</b> mis conocimientos y habilidades al servidio de los ciudadanos, cuidando de su salud y ayudándoles a restablecérla, cuando sea necesario.</p></li>
+					<br>
+					<li><p><b>TRATARÉ</b> a todos a los que sirvo con igualdad, justicia y respeto, con independencia de su género, raza, religión o creencias políticos</p></li>
+					<br>
+					<li><p><b>APOYARÉ</b> el avance profesional y del conocimiento científico y asistencia de la Farmacia</p></li>
+					<br>
+					<li><p><b>ANTEPONDRÉ</b> la defensa de la salud de los ciudadanos a cualquier otra conveniencia, incluso la mía propia</p></li>
+					<br>
+				</ul>
+			</article>
+	
+			<!--Espacio del contenido que no está relacionado directamente con el principal (aside), en este espacio habrá más enlaces para distintas páginas-->
+			<aside>
+			<img src="images/cruz.png" alt="Logo de Farmacia" title="Logo de Farmacia" width="300px" class="img_cruz">	
+			<br>
+			<a href="pages/contacto.html" ><img src="images/boton1.png" alt="Boton de Contacto" title="Boton de Contacto" width="200px"></a>
+			<!--Espacio en donde habrá un textArea para que el usuario pueda escribir un comentario-->
+			<h3>Dejanos un comentario</h3>
+			<form action="#" method="post">
+				<textarea name="txtEmail" id="idComentario" required="" cols="50" rows="7"></textarea>
+				<br>
+				<button type="submit" style="width:260px; height: 40px;">Enviar Comentario</button>
+			</form>
+			</aside>
+		</section>
+	</main>
+</header>
+
+</body>
+<!--Espacio designado para el pie de página, tendrá información básica del local-->
+<footer>
+		<p>Avenida 14 de Septiembre, Zona 13</p>
+		<p>Barberena, Santa Rosa</p>
+		<!--Mediante &copy podremos crear la caracteristica letra c que se coloca por derechos de Copyright-->
+		&copy; 2020 Farmacia Luz de Vida - Todos los derechos reservados
+		<p>Contactenos vía: <u>e-mail</u></p>
+	</footer>
+	</html>
